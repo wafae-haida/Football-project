@@ -1,0 +1,13 @@
+#pip install -r requirements.txt
+#crewAI ollama3
+numpy
+pandas 
+scikit-learn 
+xgboost 
+matplotlib
+crewai
+crewai-tools
+joblib
+seaborn
+langchain-ollama
+desktop.ini

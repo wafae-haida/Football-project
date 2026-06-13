@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+
+.venv/
+venv/
+
+.ipynb_checkpoints/
+desktop.ini
+dataset/
+models/
+outputs/
+
+*.pkl
+*.joblib
+*.csv
+
+.env
