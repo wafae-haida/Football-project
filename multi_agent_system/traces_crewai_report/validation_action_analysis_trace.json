@@ -1,8 +1,8 @@
 {
-  "trace_id": "b4d69d14-98cc-47d6-b30f-f31f06187d6e",
-  "timestamp": "2026-06-13 23:53:40",
+  "trace_id": "1a293703-0ec7-47de-8d76-598f2fd8f9db",
+  "timestamp": "2026-06-14 18:07:30",
   "agent_or_service": "Agent d'analyse des actions",
-  "task": "Extraction des caractéristiques liées aux actions de jeu",
+  "task": "Construction des séquences d'actions avant événements clés",
   "inputs": [
     "dataset\\processing\\data\\validation_data.json"
   ],
@@ -10,27 +10,9 @@
     "outil_d_analyse_des_actions"
   ],
   "outputs": [
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_001.csv",
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_002.csv",
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_003.csv",
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_004.csv",
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_005.csv",
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_006.csv",
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_007.csv",
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_008.csv",
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_009.csv",
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_010.csv",
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_011.csv",
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_012.csv",
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_013.csv",
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_014.csv",
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_015.csv",
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_016.csv",
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_017.csv",
-    "dataset\\action_analysis\\data\\validation_batches\\validation_action_features_batch_018.csv",
-    "dataset\\action_analysis\\rapports\\validation_action_report.txt"
+    "dataset\\action_analysis\\data\\validation_batches\\validation_action_analysis_batch_001.csv"
   ],
   "status": "SUCCESS",
   "error_message": null,
-  "execution_time_seconds": 53.76
+  "execution_time_seconds": 45.74
 }

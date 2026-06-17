@@ -1,0 +1,63 @@
+{
+  "But": {
+    "precision": 0.7133507853403142,
+    "recall": 0.7719546742209632,
+    "f1-score": 0.7414965986394558,
+    "support": 1412.0
+  },
+  "Carton jaune": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1665.0
+  },
+  "Carton rouge": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 72.0
+  },
+  "Corner": {
+    "precision": 0.7876374064043333,
+    "recall": 0.97998017839445,
+    "f1-score": 0.8733439321674615,
+    "support": 5045.0
+  },
+  "Coup franc": {
+    "precision": 0.6464722014460235,
+    "recall": 0.1751435325903411,
+    "f1-score": 0.27561649659863946,
+    "support": 14805.0
+  },
+  "Faute disciplinaire": {
+    "precision": 0.6404454923995384,
+    "recall": 0.9152566676225983,
+    "f1-score": 0.7535787019273339,
+    "support": 27896.0
+  },
+  "Hors-jeu": {
+    "precision": 0.712166172106825,
+    "recall": 0.45933014354066987,
+    "f1-score": 0.5584642233856894,
+    "support": 2090.0
+  },
+  "Penalty": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 45.0
+  },
+  "accuracy": 0.662247784273053,
+  "macro avg": {
+    "precision": 0.43750900721212926,
+    "recall": 0.4127081495461278,
+    "f1-score": 0.4003124940898225,
+    "support": 53030.0
+  },
+  "weighted avg": {
+    "precision": 0.6393776677786074,
+    "recall": 0.662247784273053,
+    "f1-score": 0.5981998352450991,
+    "support": 53030.0
+  }
+}

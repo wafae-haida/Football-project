@@ -1,0 +1,7 @@
+Le modèle a été entraîné avec succès pour prédire les événements clés à partir des sorties des agents précédents. Les métriques de fin d'évaluation sont :
+
+* Précision pondérée : 0,6453329418637739
+* Rappel pondéré : 0,664581645533847
+* F1 pondéré : 0,6010198268966477
+
+Le modèle a été enregistré sous le nom de "model/event_prediction_model.pkl" et les métriques ont été enregistrées dans le répertoire "model/metrics".

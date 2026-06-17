@@ -1,6 +1,7 @@
 from crewai import Agent, LLM
 
 from multi_agent_system.tools.action_analysis_tools import ActionAnalysisTool
+from multi_agent_system.tools.report_writer_tools import ReportWriterTool
 
 
 def create_action_analysis_agent() -> Agent:
@@ -13,19 +14,20 @@ def create_action_analysis_agent() -> Agent:
     return Agent(
         role="Agent d'analyse des actions",
         goal=(
-            "Analyser les actions de jeu présentes dans les matchs "
-            "et extraire les caractéristiques nécessaires pour les étapes suivantes."
+            "Construire des séquences d'actions précédant les événements clés "
+            "et rédiger un rapport humain sur le résultat de l'analyse."
         ),
         backstory=(
-            "Cet agent est responsable de l'analyse des événements de football. "
-            "Il conserve uniquement les actions de jeu utiles et exclut les événements "
-            "critiques à prédire afin d'éviter toute fuite d'information."
+            "Cet agent analyse les événements d'un match de football. "
+            "Il utilise l'outil d'analyse pour générer les batches de séquences, "
+            "puis il rédige et sauvegarde un rapport humain décrivant le résultat."
         ),
         tools=[
-            ActionAnalysisTool()
+            ActionAnalysisTool(),
+            ReportWriterTool()
         ],
         llm=llm,
         verbose=True,
         allow_delegation=False,
-        max_iter=1
+        max_iter=2
     )

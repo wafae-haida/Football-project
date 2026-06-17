@@ -1,0 +1,22 @@
+{
+  "trace_id": "e92f72b2-0571-4c00-bfee-952b5196024d",
+  "timestamp": "2026-06-17 12:03:10",
+  "agent_or_service": "Agent d'analyse de graphe",
+  "task": "Extraction des caractéristiques relationnelles entre joueurs",
+  "inputs": [
+    "dataset\\processing\\data\\train_data.json",
+    "dataset\\action_analysis\\data\\train_batches",
+    "dataset\\spatial_analysis\\data\\train_batches"
+  ],
+  "tools_or_functions_called": [
+    "outil_d_analyse_de_graphe"
+  ],
+  "outputs": [
+    "dataset\\graph_analysis\\data\\train_batches\\train_graph_analysis_batch_001.csv",
+    "dataset\\graph_analysis\\data\\train_batches\\train_graph_analysis_batch_002.csv",
+    "dataset\\graph_analysis\\data\\train_batches\\train_graph_analysis_batch_003.csv"
+  ],
+  "status": "SUCCESS",
+  "error_message": null,
+  "execution_time_seconds": 73.55
+}

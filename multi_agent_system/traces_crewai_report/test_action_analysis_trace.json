@@ -1,8 +1,8 @@
 {
-  "trace_id": "efb16162-e945-4b39-8ece-d594482d54c2",
-  "timestamp": "2026-06-13 23:58:40",
+  "trace_id": "9986c832-54ea-40ee-b4ab-de237e1e1080",
+  "timestamp": "2026-06-14 18:46:26",
   "agent_or_service": "Agent d'analyse des actions",
-  "task": "Extraction des caractéristiques liées aux actions de jeu",
+  "task": "Construction des séquences d'actions avant événements clés",
   "inputs": [
     "dataset\\processing\\data\\test_data.json"
   ],
@@ -10,27 +10,9 @@
     "outil_d_analyse_des_actions"
   ],
   "outputs": [
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_001.csv",
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_002.csv",
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_003.csv",
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_004.csv",
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_005.csv",
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_006.csv",
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_007.csv",
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_008.csv",
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_009.csv",
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_010.csv",
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_011.csv",
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_012.csv",
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_013.csv",
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_014.csv",
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_015.csv",
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_016.csv",
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_017.csv",
-    "dataset\\action_analysis\\data\\test_batches\\test_action_features_batch_018.csv",
-    "dataset\\action_analysis\\rapports\\test_action_report.txt"
+    "dataset\\action_analysis\\data\\test_batches\\test_action_analysis_batch_001.csv"
   ],
   "status": "SUCCESS",
   "error_message": null,
-  "execution_time_seconds": 55.46
+  "execution_time_seconds": 42.94
 }

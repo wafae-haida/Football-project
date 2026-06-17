@@ -1,0 +1,31 @@
+{
+  "trace_id": "643717e2-e141-4f3c-9ddf-15092b87c349",
+  "timestamp": "2026-06-17 13:10:22",
+  "agent_or_service": "Agent d'entraînement du modèle",
+  "task": "Entraînement du modèle de prédiction des événements clés",
+  "inputs": {
+    "train_action_batches_dir": "dataset\\action_analysis\\data\\train_batches",
+    "validation_action_batches_dir": "dataset\\action_analysis\\data\\validation_batches",
+    "test_action_batches_dir": "dataset\\action_analysis\\data\\test_batches",
+    "train_spatial_batches_dir": "dataset\\spatial_analysis\\data\\train_batches",
+    "validation_spatial_batches_dir": "dataset\\spatial_analysis\\data\\validation_batches",
+    "test_spatial_batches_dir": "dataset\\spatial_analysis\\data\\test_batches",
+    "train_graph_batches_dir": "dataset\\graph_analysis\\data\\train_batches",
+    "validation_graph_batches_dir": "dataset\\graph_analysis\\data\\validation_batches",
+    "test_graph_batches_dir": "dataset\\graph_analysis\\data\\test_batches"
+  },
+  "tools_or_functions_called": [
+    "outil_d_entrainement_du_modele"
+  ],
+  "outputs": [
+    "model\\event_prediction_model.pkl",
+    "model\\metrics\\metrics_summary.json",
+    "model\\metrics\\validation_confusion_matrix.csv",
+    "model\\metrics\\validation_classification_report.json",
+    "model\\metrics\\test_confusion_matrix.csv",
+    "model\\metrics\\test_classification_report.json"
+  ],
+  "status": "SUCCESS",
+  "error_message": null,
+  "execution_time_seconds": 137.27
+}

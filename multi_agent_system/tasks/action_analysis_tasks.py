@@ -1,66 +1,70 @@
 from crewai import Task
 
 
-def create_action_analysis_task(
-    agent,
-    data_file: str
-):
+def create_action_analysis_task(agent, report_path: str):
 
     return Task(
-        description=f"""
-        Utiliser obligatoirement l'outil
-        outil_d_analyse_des_actions.
+        description="""
+        Utiliser obligatoirement l'outil :
 
-        Ne jamais effectuer l'analyse manuellement.
+        outil_d_analyse_des_actions
 
-        Ne jamais essayer de lire les fichiers
-        ou de produire les résultats par raisonnement.
-
-        L'outil doit obligatoirement être exécuté
-        avec le paramètre suivant :
+        L'outil doit être exécuté avec :
 
         data_file = {data_file}
 
-        L'outil est responsable de :
+        Ne jamais utiliser /path/to/.
+        Ne jamais inventer un chemin.
 
-        - Charger le fichier de données produit par l'Agent 1.
-        - Lire la liste des matchs exploitables.
-        - Parcourir les événements de chaque match.
+        Après l'exécution de l'outil, lire le résumé JSON retourné.
 
-        - Exclure les événements suivants :
+        Ensuite, rédiger un rapport humain clair en langage naturel.
+        Le rapport doit expliquer en détail le travail réalisé par l'Agent d'Analyse des Actions.
 
-            * Goal
-            * Foul Committed
-            * Foul Won
-            * Penalty
-            * Offside
-            * Free Kick
-            * Corner
-            * Yellow Card
-            * Red Card
+        Le rapport doit obligatoirement décrire :
 
-        - Conserver uniquement les actions de jeu.
+        1. L'objectif de l'agent.
 
-        - Extraire les caractéristiques des actions conservées.
+        2. Les données reçues depuis l'Agent de Traitement des Données.
 
-        - Générer les batches CSV de caractéristiques.
+        3. Les événements considérés comme actions de jeu utilisables
+        (passes, carries, dribbles, duels, récupérations, interceptions,
+        pressions, tirs, etc.).
 
-        - Générer le rapport d'analyse.
+        4. Les événements clés exclus du contexte et utilisés comme cibles :
+        - But
+        - Penalty
+        - Corner
+        - Coup franc
+        - Carton jaune
+        - Carton rouge
+        - Faute disciplinaire
+        - Hors-jeu
 
-        - Générer la trace d'exécution.
+        5. La méthode utilisée pour construire les séquences :
+        pour chaque événement clé, récupérer les 10 actions précédentes.
 
-        Une fois le traitement terminé,
-        retourner uniquement le résultat
-        fourni par l'outil.
+        6. Le contenu des batches CSV générés :
+        - informations des actions ;
+        - joueurs impliqués ;
+        - rôles des joueurs ;
+        - ordre chronologique des actions ;
+        - label cible à prédire.
+
+        7. Les statistiques obtenues.
+
+        8. L'utilité des données produites pour les étapes suivantes du pipeline :
+        analyse spatiale, analyse de graphe et entraînement du modèle.
+
+        Le rapport doit être rédigé comme si l'agent expliquait exactement ce qu'il a fait.
+
+        Ne pas retourner un JSON.
+        Ne pas retourner un tableau technique.
+        Retourner uniquement le rapport humain final.
         """,
         expected_output="""
-        Résultat retourné par l'outil
-        outil_d_analyse_des_actions contenant :
-
-        - Le dossier des batches générés.
-        - Le rapport d'analyse.
-        - Le fichier de trace.
-        - Le statut final du traitement.
+        Rapport humain final de l'analyse des actions.
         """,
-        agent=agent
+        agent=agent,
+        output_file=report_path
     )
