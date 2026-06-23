@@ -1,0 +1,20 @@
+{
+  "trace_id": "5351f4fe-0d82-4d26-97ca-ca036ed5add7",
+  "timestamp": "2026-06-23 21:54:15",
+  "agent_or_service": "Agent d'analyse de graphe",
+  "task": "Extraction des caractéristiques relationnelles entre joueurs",
+  "inputs": [
+    "C:\\Users\\hp\\Desktop\\football-03\\dataset\\streamlit_uploaded\\processing\\uploaded_data.json",
+    "C:\\Users\\hp\\Desktop\\football-03\\dataset\\action_analysis\\data\\uploaded_batches",
+    "C:\\Users\\hp\\Desktop\\football-03\\dataset\\spatial_analysis\\data\\uploaded_batches"
+  ],
+  "tools_or_functions_called": [
+    "outil_d_analyse_de_graphe"
+  ],
+  "outputs": [
+    "dataset\\graph_analysis\\data\\uploaded_batches\\uploaded_graph_analysis_batch_001.csv"
+  ],
+  "status": "SUCCESS",
+  "error_message": null,
+  "execution_time_seconds": 0.07
+}

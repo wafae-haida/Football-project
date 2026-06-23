@@ -1,0 +1,18 @@
+{
+  "trace_id": "8a153089-bffe-4291-a8d4-c53bd3f90248",
+  "timestamp": "2026-06-23 21:54:15",
+  "agent_or_service": "Agent d'analyse des actions",
+  "task": "Construction des séquences d'actions avant événements clés",
+  "inputs": [
+    "C:\\Users\\hp\\Desktop\\football-03\\dataset\\streamlit_uploaded\\processing\\uploaded_data.json"
+  ],
+  "tools_or_functions_called": [
+    "outil_d_analyse_des_actions"
+  ],
+  "outputs": [
+    "dataset\\action_analysis\\data\\uploaded_batches\\uploaded_action_analysis_batch_001.csv"
+  ],
+  "status": "SUCCESS",
+  "error_message": null,
+  "execution_time_seconds": 0.19
+}

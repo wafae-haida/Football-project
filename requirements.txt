@@ -10,4 +10,3 @@ crewai-tools
 joblib
 seaborn
 langchain-ollama
-desktop.ini

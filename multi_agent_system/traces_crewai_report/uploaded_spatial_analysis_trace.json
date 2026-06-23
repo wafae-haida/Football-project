@@ -1,0 +1,19 @@
+{
+  "trace_id": "2bc5b1cc-a939-4ce6-a84e-16d2f1c50ac7",
+  "timestamp": "2026-06-23 21:54:15",
+  "agent_or_service": "Agent d'analyse spatiale",
+  "task": "Enrichissement spatial des séquences d'actions",
+  "inputs": [
+    "C:\\Users\\hp\\Desktop\\football-03\\dataset\\streamlit_uploaded\\processing\\uploaded_data.json",
+    "C:\\Users\\hp\\Desktop\\football-03\\dataset\\action_analysis\\data\\uploaded_batches"
+  ],
+  "tools_or_functions_called": [
+    "outil_d_analyse_spatiale"
+  ],
+  "outputs": [
+    "dataset\\spatial_analysis\\data\\uploaded_batches\\uploaded_spatial_analysis_batch_001.csv"
+  ],
+  "status": "SUCCESS",
+  "error_message": null,
+  "execution_time_seconds": 0.19
+}
